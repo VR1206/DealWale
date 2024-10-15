@@ -59,15 +59,15 @@ function OurServices() {
   ];
     return (
       <div className='flex justify-center'>
-        <div className='md:h-auto md:w-[85vw] sm:h-[100vh]  sm:w-[100vw] h-auto w-[98%] mt-10 sm:mt-16 md:mt-12'>
-          <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Our Services</h1>
-          <div className='flex gap-2 flex-wrap justify-center  mt-4 md:gap-4'>
+        <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-10 sm:mt-16 md:mt-12'>
+          <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Top Deals</h1>
+          <div className='flex gap-3 m-1 flex-wrap justify-center  mt-4 md:gap-4'>
             {brands.map(({ id, imageUrl }) => (
               <Card key={id} className='transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg'>
                 <img
                   src={imageUrl}
                   alt="Brand"
-                  className='h-[100%] w-[100%] object-cover rounded-lg overflow-hidden'
+                  className='h-[100%] w-[100%] p-3 object-cover rounded-lg overflow-hidden'
                 />
               </Card>
             ))}

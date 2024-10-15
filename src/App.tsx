@@ -2,7 +2,7 @@
 import NavBar from './components/navBar';
 import Banner from './components/banner';
 import OurServices from './components/ourServices';
-import Sell from './components/sell';
+import Sell from './components/smartPhone';
 
 
 function App() {

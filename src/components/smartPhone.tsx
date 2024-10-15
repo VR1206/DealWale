@@ -60,14 +60,14 @@ function Sell() {
     return (
         <div className='flex justify-center'>
             <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-5 sm:mt-16 md:mt-8'>
-                <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Sell Your Old Device</h1>
-                <div className='flex gap-2 flex-wrap justify-center mt-4 md:gap-4'>
+                <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Smart Phone </h1>
+                <div className='flex gap-2 m-1 flex-wrap justify-center mt-4 md:gap-4'>
                     {brands.map(({ id, imageUrl }) => (
                         <Card key={id} className='transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden'>
                             <img
                                 src={imageUrl}
                                 alt="Device"
-                                className='h-full w-full object-cover rounded-lg'
+                                className='h-full  p-3 w-full object-cover rounded-lg'
                             />
                         </Card>
                     ))}
