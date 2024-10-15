@@ -3,57 +3,79 @@ import Card from './card';
 interface BrandList {
     id: number;
     imageUrl: string;
+    link: string;
 }
-function Sell() {
+function SmartPhone() {
 
     const brands: BrandList[] = [
         {
             id: 1,
-            imageUrl: 'https://s3no.cashify.in/builder/cd13764b153e46e19f9c6551ee52b5e6.webp?p=default&s=lg',
+            imageUrl: 'https://inventstore.in/wp-content/uploads/2023/04/iPhone_13_Starlight_Pure_.webp',
+            link:'https://amzn.to/3BIzHtL'
         },
         {
             id: 2,
-            imageUrl: 'https://s3no.cashify.in/builder/caa3a1efa51541a5aa37fd292790ea81.webp?p=default&s=lg',
+            imageUrl: 'https://img-prd-pim.poorvika.com/product/Apple-iphone-15-pro-max-black-titanium-256gb-Back-Front-Back-Side-View-Image.png',
+            link: 'https://amzn.to/405CtTR'
         },
         {
             id: 3,
-            imageUrl: 'https://s3no.cashify.in/builder/3e1f26febd3f4056a7ac5104a122aa94.webp?p=default&s=lg',
+            imageUrl: 'https://oasis.opstatics.com/content/dam/oasis/page/2023/global/product/larry/specs/product-black.png',
+            link: 'https://amzn.to/407EeAg'
+
         },
         {
             id: 4,
-            imageUrl: 'https://s3no.cashify.in/builder/b35c134330e5422699aed92d1254789d.webp?p=default&s=lg',
+            imageUrl: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1706790940/Croma%20Assets/Communication/Mobiles/Images/304698_hagerl.png',
+            link: 'https://amzn.to/4f7dzrd'
+
         },
         {
             id: 5,
-            imageUrl: 'https://s3no.cashify.in/builder/4060695bca3447c2b7296aa5ba9ce827.webp?p=default&s=lg',
+            imageUrl: 'https://media.croma.com/image/upload/v1714478878/Croma%20Assets/Communication/Mobiles/Images/306595_7_qlmvcg.png',
+            link: 'https://amzn.to/4eJY9JU'
+
         },
         {
             id: 6,
-            imageUrl: 'https://s3no.cashify.in/builder/522d89598f594f0ca6f9d22e40517db6.webp?p=default&s=lg',
+            imageUrl: 'https://i0.wp.com/www.93mobiles.com/wp-content/uploads/2024/08/301917_4_ypz4lq.webp?fit=640%2C640&ssl=1',
+            link: 'https://amzn.to/484FFkV'
+
         },
         {
             id: 7,
-            imageUrl: 'https://s3no.cashify.in/builder/ed7d743ec18f40f6b0cbb58bc6783d5b.webp?p=default&s=lg',
+            imageUrl: 'https://nothing.tech/cdn/shop/files/2048x1352BuyPage-BlackPhone-1.png?v=1720093601',
+            link: 'https://amzn.to/3U78CGY'
+
         },
         {
             id: 8,
-            imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+            imageUrl: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1704270661/Croma%20Assets/Communication/Mobiles/Images/303570_lzunu9.png',
+            link: 'https://amzn.to/486QXFe'
+
         },
         {
             id: 8,
-            imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+            imageUrl: 'https://rrmobiles.in/wp-content/uploads/2024/07/157780-800-auto.png',
+            link: 'https://amzn.to/4eKOLFJ'
+
         },
         {
-            id: 8,
-            imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+            id: 9,
+            imageUrl: 'https://img-prd-pim.poorvika.com/cdn-cgi/image/width=500,height=500,quality=75/product/samsung-galaxy-s23-fe-5g-mint-128gb-8gb-ram-front-back-view.png',
+            link: 'https://amzn.to/4h3ctib'
+
         },
         {
-            id: 8,
-            imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+            id: 10,
+            imageUrl: 'https://assets.beebom.com/mobile/2024/08/Untitled-design-2024-08-22T112829.177.png',
+            link: 'https://amzn.to/48cBofk'
         },
         {
-            id: 8,
-            imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+            id: 11,
+            imageUrl: 'https://media.croma.com/image/upload/v1713460765/Croma%20Assets/Communication/Mobiles/Images/305330_7_jkth49.png',
+            link: 'https://amzn.to/4dS1llk'
+
         },
 
     ];
@@ -62,13 +84,15 @@ function Sell() {
             <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-5 sm:mt-16 md:mt-8'>
                 <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Smart Phone </h1>
                 <div className='flex gap-2 m-1 flex-wrap justify-center mt-4 md:gap-4'>
-                    {brands.map(({ id, imageUrl }) => (
+                    {brands.map(({ id, imageUrl,link }) => (
                         <Card key={id} className='transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden'>
                             <img
                                 src={imageUrl}
                                 alt="Device"
-                                className='h-full  p-3 w-full object-cover rounded-lg'
+                                className='h-full  p-2  w-full object-cover rounded-lg cursor-pointer'
+                                onClick={() => window.location.href = link}
                             />
+                            
                         </Card>
                     ))}
                 </div>
@@ -79,4 +103,4 @@ function Sell() {
     );
 }
 
-export default Sell;
+export default SmartPhone;

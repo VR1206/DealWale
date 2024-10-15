@@ -2,7 +2,7 @@
 import NavBar from './components/navBar';
 import Banner from './components/banner';
 import OurServices from './components/ourServices';
-import Sell from './components/smartPhone';
+import SmartPhone from './components/smartPhone';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <Banner />
       <OurServices />
-      <Sell />
+      <SmartPhone/>
     </div>
   );
 }

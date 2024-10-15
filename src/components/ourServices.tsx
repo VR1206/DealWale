@@ -3,79 +3,102 @@ import Card from './card';
 interface BrandList {
   id: number;
   imageUrl: string;
+  link: string;
 }
 function OurServices() {
 
   const brands: BrandList[] = [
     {
       id: 1,
-      imageUrl: 'https://s3no.cashify.in/builder/cd13764b153e46e19f9c6551ee52b5e6.webp?p=default&s=lg',
+      imageUrl: 'https://img-prd-pim.poorvika.com/prodvarval/apple-macbook-air-m1-chip-with-8-core-cpu-and-7-core-gpu-mac-os-laptop-gold.png',
+      link: 'https://amzn.to/4dMc8xC'
     },
     {
       id: 2,
-      imageUrl: 'https://s3no.cashify.in/builder/caa3a1efa51541a5aa37fd292790ea81.webp?p=default&s=lg',
+      imageUrl: 'https://in.store.asus.com/media/catalog/product/1/_/1_fa507u_1.png',
+      link: 'https://amzn.to/3A2ZZ9F'
+
     },
     {
       id: 3,
-      imageUrl: 'https://s3no.cashify.in/builder/3e1f26febd3f4056a7ac5104a122aa94.webp?p=default&s=lg',
+      imageUrl: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1721213672/Croma%20Assets/Computers%20Peripherals/Laptop/Images/304863_0_orao7x.png',
+      link: 'https://amzn.to/486pFyA'
+
     },
     {
       id: 4,
-      imageUrl: 'https://s3no.cashify.in/builder/b35c134330e5422699aed92d1254789d.webp?p=default&s=lg',
+      imageUrl: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1722284289/Croma%20Assets/Entertainment/Television/Images/267334_0_gveqbv.png?tr=w-600',
+      link: 'https://amzn.to/4h3PrYz'
+
     },
     {
       id: 5,
-      imageUrl: 'https://s3no.cashify.in/builder/4060695bca3447c2b7296aa5ba9ce827.webp?p=default&s=lg',
+      imageUrl: 'https://theitgear.com/wp-content/uploads/2022/03/Cosmic-Byte-CB-GK-25-Pandora-Tkl-Mechanical-Keyboard-With-Outemu-Blue-Switches-And-Rainbow-Led.webp',
+      link: 'https://amzn.to/48792TE'
+
     },
     {
       id: 6,
-      imageUrl: 'https://s3no.cashify.in/builder/522d89598f594f0ca6f9d22e40517db6.webp?p=default&s=lg',
+      imageUrl: 'https://antesports.com/wp-content/uploads/2023/04/51ZpCKyxMWL.png',
+      link: 'https://amzn.to/3YazCXc'
+
     },
     {
       id: 7,
-      imageUrl: 'https://s3no.cashify.in/builder/ed7d743ec18f40f6b0cbb58bc6783d5b.webp?p=default&s=lg',
+      imageUrl: 'https://www.gonoise.com/cdn/shop/products/4_2.png?v=1676439601',
+      link: 'https://amzn.to/485RcjV'
+
     },
     {
       id: 8,
-      imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+      imageUrl: 'https://image01-in.oneplus.net/media/202406/19/9c9806ee60643ab92c71db1da6d55c2c.png',
+      link: 'https://amzn.to/3U9wpWO'
+
     },
     {
-      id: 8,
-      imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+      id: 9,
+      imageUrl: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1724776643/Croma%20Assets/Large%20Appliances/Dryers/Images/260605_0_yrwbow.png',
+      link: 'https://amzn.to/3zXDZwU'
     },
     {
-      id: 8,
-      imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+      id: 10,
+      imageUrl: 'https://www.bigbasket.com/media/uploads/p/xl/40066432_6-pintola-chocolate-peanut-butter-creamy.jpg',
+      link: 'https://amzn.to/4f00qjG'
+
     },
     {
-      id: 8,
-      imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+      id: 11,
+      imageUrl: 'https://theitgear.com/wp-content/uploads/2024/03/Cosmic-Byte-CB-GK-39-Wireless-Trinity-Optical-Latest-Swappable-Switch-Keyboard-1-430x430.webp',
+      link: 'https://amzn.to/3ZZPmPw'
+
     },
     {
-      id: 8,
-      imageUrl: 'https://s3no.cashify.in/builder/f1f0df2917bd410b8da95675c63be2d1.webp?p=default&s=lg',
+      id: 12,
+      imageUrl: 'https://www.aptronixindia.com/media/catalog/product/cache/31f0162e6f7d821d2237f39577122a8a/a/p/apple_20w_usb-c_power_adapter-removebg-preview.png',
+      link: 'https://amzn.to/405gnBa'
     },
-  
+
   ];
-    return (
-      <div className='flex justify-center'>
-        <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-10 sm:mt-16 md:mt-12'>
-          <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Top Deals</h1>
-          <div className='flex gap-3 m-1 flex-wrap justify-center  mt-4 md:gap-4'>
-            {brands.map(({ id, imageUrl }) => (
-              <Card key={id} className='transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg'>
-                <img
-                  src={imageUrl}
-                  alt="Brand"
-                  className='h-[100%] w-[100%] p-3 object-cover rounded-lg overflow-hidden'
-                />
-              </Card>
-            ))}
-          </div>
+  return (
+    <div className='flex justify-center'>
+      <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-10 sm:mt-16 md:mt-12'>
+        <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Top Deals</h1>
+        <div className='flex gap-3 m-1 flex-wrap justify-center  mt-4 md:gap-4'>
+          {brands.map(({ id, imageUrl, link }) => (
+            <Card key={id} className='transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg'>
+              <img
+                src={imageUrl}
+                alt="Brand"
+                className='h-[100%] w-[100%] p-3 object-cover rounded-lg overflow-hidden'
+                onClick={() => window.location.href = link}
+              />
+            </Card>
+          ))}
         </div>
       </div>
+    </div>
 
-   
+
   );
 }
 
