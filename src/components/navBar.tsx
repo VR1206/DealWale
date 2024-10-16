@@ -7,13 +7,13 @@ function NavBar() {
                 <div className='md:h-[10vh] md:w-[80vw] sm:h-[8vh] sm:w-full h-[8vh] w-full bg-[#ffffff] flex items-center justify-between px-8 overflow-hidden'>
                     <div className='flex space-x-4 items-center'>
                         {/* <h1 className='md:text-xl sm:text-lg text-sm font-bold text-gray-800'>DealWale</h1> */}
-                        <img src="logo.png" alt=""
+                        <img src="logo.png" alt="logo"
                         className='md:w-[3.5vw] sm:w-[5vw] w-[8vw]'
                         />
                         <div className="md:h-[6vh] md:w-[55vw] sm:h-[4vh] sm:w-[70vw] h-[4vh] w-[50vw] bg-[#f7f7f7] flex items-center p-3 rounded-2xl transition-all duration-200 hover:bg-[#ececec]">
                             <CiSearch className="text-2xl text-[#c7c7c7]" />
                             <input
-                                className="md:h-[6vh] md:w-[55vw] sm:h-[4vh] sm:w-[70vw] h-[4vh] w-[40vw] rounded-2xl cursor-pointer p-2 bg-[#f7f7f7] outline-none hover:bg-[#f1f1f1] transition-all duration-200"
+                                className="md:h-[6vh] md:w-[55vw] sm:h-[4vh] sm:w-[70vw] h-[4vh] w-[40vw] rounded-2xl cursor-pointer p-2 bg-[#f7f7f7] outline-none hover:bg-[#ececec] transition-all duration-200"
                                 placeholder="Search for Products, Brand and More"
                             />
                         </div>
