@@ -26,7 +26,7 @@ function NavBar() {
                     </div>
 
                     <div className='flex space-x-4 items-center'>
-                        <button className='bg-slate-500 lg:px-6 lg:py-2 md:px-5 md:py-1 sm:px-4 sm:py-1 px-3 py-1 text-white rounded-lg lg:text-lg md:text-base sm:text-sm text-xs hover:bg-slate-600 active:bg-slate-700 transition-colors duration-200 shadow-lg'
+                        <button className='bg-slate-500 lg:px-6 lg:py-2 md:px-5 md:py-1 sm:px-4 sm:py-1 px-3 py-[1vh] text-white rounded-lg lg:text-lg md:text-base sm:text-sm text-xs hover:bg-slate-600 active:bg-slate-700 transition-colors duration-200 shadow-lg'
                           
                         >
                             Search
