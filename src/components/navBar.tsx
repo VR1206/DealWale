@@ -6,7 +6,10 @@ function NavBar() {
             <div className='fixed top-0 left-0 w-full md:h-[10vh] sm:h-[8vh] h-[8vh] bg-[#ffffff] flex justify-center border-b border-[#d4d4d4] z-50 shadow-md'>
                 <div className='md:h-[10vh] md:w-[80vw] sm:h-[8vh] sm:w-full h-[8vh] w-full bg-[#ffffff] flex items-center justify-between px-8 overflow-hidden'>
                     <div className='flex space-x-4 items-center'>
-                        <h1 className='md:text-xl sm:text-lg text-sm font-bold text-gray-800'>DealWale</h1>
+                        {/* <h1 className='md:text-xl sm:text-lg text-sm font-bold text-gray-800'>DealWale</h1> */}
+                        <img src="logo.png" alt=""
+                        className='md:w-[3.5vw] sm:w-[5vw] w-[8vw]'
+                        />
                         <div className="md:h-[6vh] md:w-[55vw] sm:h-[4vh] sm:w-[70vw] h-[4vh] w-[50vw] bg-[#f7f7f7] flex items-center p-3 rounded-2xl transition-all duration-200 hover:bg-[#ececec]">
                             <CiSearch className="text-2xl text-[#c7c7c7]" />
                             <input
