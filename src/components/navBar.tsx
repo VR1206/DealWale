@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
+import amazonScrapper from '../scrapper/amazonScrapper'
 
 function NavBar() {
+
+    const [input, setInput] = useState(" ");
+
     return (
         <>
             <div className='fixed top-0 left-0 w-full md:h-[10vh] sm:h-[8vh] h-[8vh] bg-[#ffffff] flex justify-center border-b border-[#d4d4d4] z-50 shadow-md'>
@@ -15,13 +20,20 @@ function NavBar() {
                             <input
                                 className="md:h-[6vh] md:w-[55vw] sm:h-[4vh] sm:w-[70vw] h-[4vh] w-[40vw] rounded-2xl cursor-pointer p-2 bg-[#f7f7f7] outline-none hover:bg-[#ececec] transition-all duration-200"
                                 placeholder="Search for Products, Brand and More"
+                                onChange={(e) => setInput(e.target.value)}
                             />
                         </div>
                     </div>
 
                     <div className='flex space-x-4 items-center'>
-                        <button className='bg-slate-500 lg:px-6 lg:py-2 md:px-5 md:py-1 sm:px-4 sm:py-1 px-3 py-1 text-white rounded-lg lg:text-lg md:text-base sm:text-sm text-xs hover:bg-slate-600 active:bg-slate-700 transition-colors duration-200 shadow-lg'>
+                        <button className='bg-slate-500 lg:px-6 lg:py-2 md:px-5 md:py-1 sm:px-4 sm:py-1 px-3 py-1 text-white rounded-lg lg:text-lg md:text-base sm:text-sm text-xs hover:bg-slate-600 active:bg-slate-700 transition-colors duration-200 shadow-lg'
+                            onClick={() =>
+
+                                amazonScrapper("iphone")
+                            }
+                        >
                             Search
+                            
                         </button>
                         <h1 className='lg:block sm:hidden hidden text-gray-700'>Location</h1>
 
