@@ -1,10 +1,10 @@
-import { useState } from 'react';
+
 import { CiSearch } from 'react-icons/ci';
 import amazonScrapper from '../scrapper/amazonScrapper'
 
 function NavBar() {
 
-    const [input, setInput] = useState(" ");
+
 
     return (
         <>
@@ -20,7 +20,7 @@ function NavBar() {
                             <input
                                 className="md:h-[6vh] md:w-[55vw] sm:h-[4vh] sm:w-[70vw] h-[4vh] w-[40vw] rounded-2xl cursor-pointer p-2 bg-[#f7f7f7] outline-none hover:bg-[#ececec] transition-all duration-200"
                                 placeholder="Search for Products, Brand and More"
-                                onChange={(e) => setInput(e.target.value)}
+
                             />
                         </div>
                     </div>
