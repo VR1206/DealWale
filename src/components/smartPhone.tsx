@@ -77,6 +77,24 @@ function SmartPhone() {
             link: 'https://amzn.to/4dS1llk'
 
         },
+        {
+            id: 12,
+            imageUrl: 'https://images.samsung.com/is/image/samsung/p6pim/in/sm-m156bdbdins/gallery/in-galaxy-m15-5g-sm-m156-sm-m156bdbdins-541575158?$650_519_PNG$',
+            link: 'https://amzn.to/3UaIAmk'
+
+        },
+        {
+            id: 13,
+            imageUrl: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1721048340/Croma%20Assets/Communication/Mobiles/Images/308175_0_marq4l.png',
+            link: 'https://amzn.to/48aQAcK'
+
+        },
+        {
+            id: 14,
+            imageUrl: 'https://image01-in.oneplus.net/media/202406/19/ad3a7ab482ea9ba7fa0975c775769e7c.png',
+            link: 'https://amzn.to/4082B0y'
+
+        },
 
     ];
     return (

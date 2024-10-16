@@ -77,6 +77,22 @@ function OurServices() {
       imageUrl: 'https://www.aptronixindia.com/media/catalog/product/cache/31f0162e6f7d821d2237f39577122a8a/a/p/apple_20w_usb-c_power_adapter-removebg-preview.png',
       link: 'https://amzn.to/405gnBa'
     },
+    {
+      id: 13,
+      imageUrl: 'https://m.media-amazon.com/images/I/61Le0NNy8FL._AC_UF1000,1000_QL80_.jpg',
+      link: 'https://amzn.to/4f6jlcN'
+    },
+    {
+      id: 14,
+      imageUrl: 'https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1710228259/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/304474_0_uggihm.png',
+      link: 'https://amzn.to/3U5EZWn'
+    },
+    {
+      id: 15,
+      imageUrl: 'https://www.sathya.store/img/product/mMlB9LgIot43rEA5.png',
+      link: 'https://amzn.to/4hbkotZ'
+    },
+  
 
   ];
   return (
