@@ -1,5 +1,5 @@
 
-import Card from './card';
+import Card from '../ui/card';
 interface BrandList {
     id: number;
     imageUrl: string;
@@ -11,7 +11,7 @@ function SmartPhone() {
         {
             id: 1,
             imageUrl: 'https://inventstore.in/wp-content/uploads/2023/04/iPhone_13_Starlight_Pure_.webp',
-            link:'https://amzn.to/3BIzHtL'
+            link: 'https://amzn.to/3BIzHtL'
         },
         {
             id: 2,
@@ -102,7 +102,7 @@ function SmartPhone() {
             <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-5 sm:mt-16 md:mt-8'>
                 <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Smart Phone </h1>
                 <div className='flex gap-2 m-1 flex-wrap justify-center mt-4 md:gap-4'>
-                    {brands.map(({ id, imageUrl,link }) => (
+                    {brands.map(({ id, imageUrl, link }) => (
                         <Card key={id} className='transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden'>
                             <img
                                 src={imageUrl}
@@ -110,7 +110,7 @@ function SmartPhone() {
                                 className='h-full  p-2  w-full object-cover rounded-lg cursor-pointer'
                                 onClick={() => window.location.href = link}
                             />
-                            
+
                         </Card>
                     ))}
                 </div>

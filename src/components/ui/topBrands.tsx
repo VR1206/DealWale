@@ -1,5 +1,5 @@
 
-import Blocks from './blocks';
+import Blocks from '../ui/blocks';
 
 interface BrandList {
     id: number;

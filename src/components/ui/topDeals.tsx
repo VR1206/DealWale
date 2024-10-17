@@ -92,7 +92,7 @@ function OurServices() {
       imageUrl: 'https://www.sathya.store/img/product/mMlB9LgIot43rEA5.png',
       link: 'https://amzn.to/4hbkotZ'
     },
-  
+
 
   ];
   return (
