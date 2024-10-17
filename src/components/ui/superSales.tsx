@@ -1,5 +1,5 @@
 
-import SuperSellerCards from "./superSellerCards";
+import SuperSellerCards from "./superSalesCards";
 
 interface SellerList {
     id: number;
@@ -41,7 +41,7 @@ function SuperSellers() {
         <>
             <div className='flex justify-center'>
                 <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-10 sm:mt-16 md:mt-12'>
-                    <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Super Sellers</h1>
+                    <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Super Sales</h1>
                     <div className='flex gap-2 m-1 flex-wrap justify-center   mt-4 md:gap-4'>
                         {
                             Seller.map((item) => (
