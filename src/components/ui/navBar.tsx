@@ -3,8 +3,7 @@ import { CiSearch } from 'react-icons/ci';
 
 
 function NavBar() {
-
-
+   
 
     return (
         <>
@@ -13,7 +12,7 @@ function NavBar() {
                     <div className='flex space-x-4 items-center'>
                         {/* <h1 className='md:text-xl sm:text-lg text-sm font-bold text-gray-800'>DealWale</h1> */}
                         <img src="logo.png" alt="logo"
-                        className='md:w-[3.5vw] sm:w-[5vw] w-[8vw]'
+                            className='md:w-[3.5vw] sm:w-[5vw] w-[8vw]'
                         />
                         <div className="md:h-[6vh] md:w-[55vw] sm:h-[4vh] sm:w-[70vw] h-[4vh] w-[50vw] bg-[#f7f7f7] flex items-center p-3 rounded-2xl transition-all duration-200 hover:bg-[#ececec]">
                             <CiSearch className="text-2xl text-[#c7c7c7]" />
@@ -27,10 +26,10 @@ function NavBar() {
 
                     <div className='flex space-x-4 items-center'>
                         <button className='bg-slate-500 lg:px-6 lg:py-2 md:px-5 md:py-1 sm:px-4 sm:py-1 px-3 py-[1vh] text-white rounded-lg lg:text-lg md:text-base sm:text-sm text-xs hover:bg-slate-600 active:bg-slate-700 transition-colors duration-200 shadow-lg'
-                          
+
                         >
                             Search
-                            
+
                         </button>
                         <h1 className='lg:block sm:hidden hidden text-gray-700'>Location</h1>
 
