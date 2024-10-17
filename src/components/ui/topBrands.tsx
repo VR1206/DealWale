@@ -60,7 +60,7 @@ function TopBrands() {
 
     return (
         <div className='flex md:justify-center'>
-            <div className='md:h-[45vh] md:w-[80vw] sm:h-[100vh] sm:w-[100vw] mt-16 sm:mt-16 md:mt-8'>
+            <div className='md:h-[45vh] md:w-[80vw] sm:h-[100vh] bg-blue-400  sm:w-[100vw] mt-16 sm:mt-16 md:mt-8'>
                 <h1 className='text-3xl font-bold md:mx-2 sm:mx-10 mx-2'>Top Brands</h1>
                 <div className='flex justify-center flex-wrap md:gap-4 sm:gap-10 gap-10 py-3'>
                     {brands.map(({ id, imageUrl }) => (

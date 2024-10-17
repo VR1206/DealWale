@@ -99,9 +99,9 @@ function SmartPhone() {
     ];
     return (
         <div className='flex justify-center'>
-            <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-5 sm:mt-16 md:mt-8'>
+            <div className='md:h-[60vh] md:w-[85vw] sm:h-[100vh]  sm:w-[100vw] h-auto w-[98%] mt-5 sm:mt-16 md:mt-8'>
                 <h1 className='text-3xl font-bold md:mx-5 sm:mx-10 mx-2'>Smart Phone </h1>
-                <div className='flex gap-2 m-1 flex-wrap justify-center mt-4 md:gap-4'>
+                <div className='flex gap-3 m-1 mt-4 md:gap-2 flex-nowrap overflow-x-auto scroll-smooth'>
                     {brands.map(({ id, imageUrl, link }) => (
                         <Card key={id} className='transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg rounded-lg overflow-hidden'>
                             <img

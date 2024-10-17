@@ -115,22 +115,22 @@ function SuperSellers() {
                     <div className="bg-[#f0f4f3] md:h-[5vh] sm:h-10 w-full h-10 shadow-2xl rounded-lg justify-evenly flex items-center">
                         <button
                             onClick={() => showCategory('SuperSales', Seller)}
-                            className={`md:text-lg sm:text-sm text-xs font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'SuperSales' ? 'underline' : ''}`}>
+                            className={`md:text-lg sm:text-sm text-sm font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'SuperSales' ? 'underline' : ''}`}>
                             SuperSales
                         </button>
                         <button
                             onClick={() => showCategory('Accessories', Accessories)}
-                            className={`md:text-lg sm:text-sm text-xs font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'Accessories' ? 'underline' : ''}`}>
+                            className={`md:text-lg sm:text-sm text-sm font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'Accessories' ? 'underline' : ''}`}>
                             Accessories
                         </button>
                         <button
                             onClick={() => showCategory('Electronics', Electronics)}
-                            className={`md:text-lg sm:text-sm text-xs font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'Electronics' ? 'underline' : ''}`}>
+                            className={`md:text-lg sm:text-sm text-sm font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'Electronics' ? 'underline' : ''}`}>
                             Electronics
                         </button>
                         <button
                             onClick={() => showCategory('MenFashion', MenFashion)}
-                            className={`md:text-lg sm:text-sm text-xs font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'MenFashion' ? 'underline' : ''}`}>
+                            className={`md:text-lg sm:text-sm text-sm font-semibold md:mx-5 sm:mx-10 mx-2  ${activeCategory === 'MenFashion' ? 'underline' : ''}`}>
                             Men's Fashion
                         </button>
                     </div>
