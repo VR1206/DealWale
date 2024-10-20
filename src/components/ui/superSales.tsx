@@ -111,7 +111,7 @@ function SuperSellers() {
     return (
         <>
             <div className='flex justify-center'>
-                <div className='md:h-auto md:w-[85vw] sm:h-[100vh] sm:w-[100vw] h-auto w-[98%] mt-10 sm:mt-16 md:mt-12 cursor-pointer'>
+                <div className='md:h-auto md:w-[85vw] sm:h-[100vh]  sm:w-[100vw] h-auto w-[98%] mt-10 sm:mt-16 md:mt-12 cursor-pointer'>
                     <div className="bg-[#f0f4f3] md:h-[5vh] sm:h-10 w-full h-10 shadow-2xl rounded-lg justify-evenly flex items-center">
                         <button
                             onClick={() => showCategory('SuperSales', Seller)}
@@ -135,7 +135,7 @@ function SuperSellers() {
                         </button>
                     </div>
 
-                    <div className='flex gap-2 m-1 flex-wrap justify-center mt-4 md:gap-4'>
+                    <div className='flex gap-2  m-1  flex-wrap justify-center mt-4 md:gap-4'>
                         {
                             item.map((item) => (
                                 <SuperSellerCards key={item.id}>
